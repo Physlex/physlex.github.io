@@ -1,4 +1,17 @@
+html {
+    min-height: 100%;
+}
+
+.landing {
+}
+
+.resume {
+    display: block;
+}
+
 body {
+    height: 100%;
+
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: x-large;
@@ -7,16 +20,44 @@ body {
     margin: 0;
     padding: 0;
 
-    background-color: rgb(27, 124, 204);
+    background-image: linear-gradient(rgb(27, 124, 204), 70%, rgb(121, 83, 182));
+    background-repeat: no-repeat;
 }
 
-nav {   
+.entice {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 5%;
+
+    font-size: x-large;
+    font-weight: bolder;
+    width: 50%;
+}
+
+.page {
     width: 50%;
 
+    margin: auto;
+    margin-top: 10%;
+    
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+}
+
+nav {
+    width: 33%;
+
     padding: 1px;
-    margin-top: 10px;
+    margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
+
+    display: flex;
+    justify-content: space-evenly;
 }
 
 li.nav {
@@ -29,19 +70,6 @@ li.nav {
     text-align: center;
     list-style: none;
     font-size: 12pt;
-
-    background-color: rgba(255, 255, 255, 0.13);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 10px;
-}
-
-.page {
-    width: 50%;
-
-    margin: auto;
-    margin-top: 10px;
-    
-    text-align: center;
 
     background-color: rgba(255, 255, 255, 0.13);
     border: 1px solid rgba(255, 255, 255, 0.25);
