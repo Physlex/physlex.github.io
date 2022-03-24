@@ -2,65 +2,71 @@ html {
     min-height: 100%;
 }
 
-body {
-    overflow: hidden;
+.landing {
+    text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: x-large;
     color: white;
-
-    margin: 0;
-    padding: 0;
-
-    background-repeat: no-repeat;
 }
 
-.landing {
+body {
     height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     background-image: linear-gradient(rgb(27, 124, 204), 70%, rgb(121, 83, 182));
 }
 
-.page {
+.welcome {  
     width: 50%;
-
+    height: 100%;
     margin: auto;
     margin-top: 15%;
-    
-    text-align: center;
-
-    background-color: rgba(255, 255, 255, 0.13);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 10px;
 }
 
 nav {
+    height: auto;
     width: 100%;
-
-    padding: 1px;
-    margin-top: 12%;
-    margin-left: auto;
-    margin-right: auto;
-
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
     display: flex;
     justify-content: space-evenly;
+    background-color: rgb(13, 57, 94);
 }
 
 li.nav {
-    padding: 10px;
-
-    width: 90px;
-    height: 50%;
-
+    padding: 12px;
     display: inline-block;
     text-align: center;
     list-style: none;
     font-size: 12pt;
-
-    background-color: rgba(255, 255, 255, 0.13);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
 }
 
+.bottom-border {
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    background-color: rgb(13, 57, 94);
+}
+
 p,h1,h2,h3,h4,h5,h6 {
-    margin: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: inherit;
+    color: gold;
 }
