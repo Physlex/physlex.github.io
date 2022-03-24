@@ -15,7 +15,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(rgb(27, 124, 204), 70%, rgb(121, 83, 182));
+    background-image: linear-gradient(rgb(10, 43, 70), rgb(27, 124, 204), 70%, rgb(121, 83, 182), rgb(13, 57, 94));
 }
 
 .welcome {  
