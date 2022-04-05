@@ -1,80 +1,59 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
-    padding: 0;
-    margin: 0;
-    background-color: rgb(0, 99, 97);
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
 }
 
-.grid-container {
-    width: 97.5%;
+div {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+li.header-item {
+    list-style: none;
+}
+
+.main-header-grid-container {
+    margin: 0px;
     padding: 10px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
     display: grid;
-    grid-template-columns: 1fr 60px 0.5fr;
-    grid-template-rows: 100px 400px 400px 200px 400px 100px;
-    align-content: center;
-    gap: 10px;
-    background-color: rgba(230, 253, 255, 0.126);
-    border-radius: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    align-items: stretch;
+    align-items: center;
 }
 
-.grid-item {
-    text-align: left;
+.header-icon {
+    justify-self: start;
+}
+
+.header-webtitle {
+    margin: auto;
+    justify-self: center;
+}
+
+.main-header {
+    background-color: rgb(102, 156, 158);
+}
+
+.secondary-header-flex-container {
+    margin: 0px;
     padding: 10px;
+
+    display: flex;
+    justify-content: start;
 }
 
-.header-spacing {
-    height: 70px;
-    background-color: inherit;
+.secondary-header-flex-item {
+    margin: 0px 22px 0px 0;
 }
 
-.header {
-    width: 97.5%;
-    font-size: 18px;
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    background-color: black;
-}
-
-.center-image {
-}
-
-.content {
-    background-color: white;
-    border-radius: 10px;
-}
-
-.grid-header {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    font-size: 18px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.sidebar {
-    grid-column-start: 3;
-    grid-row-start: 2;
-    grid-row-end: 6;
-}
-
-.grid-footer {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    font-size: 18px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.footer {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    font-size: 18px;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 1);
+.secondary-header {
+    background-color: rgb(89, 137, 139);
 }
