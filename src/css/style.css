@@ -5,7 +5,7 @@ body {
     margin: 0px auto 0px;
     padding: 0px;
 
-    background-color: white;
+    background-color: rgb(102, 156, 158);
 }
 
 div {
@@ -16,11 +16,23 @@ h1 {
     padding: 0px;
 }
 
+p {
+    font-size: 18px;
+}
+
+hr {
+    color: rgb(75, 118, 120);
+}
+
 li.header-item {
     list-style: none;
 }
 
 /* main header */
+
+.main-header-wrapper {
+    border-bottom: 1px solid rgb(51, 81, 82);
+}
 
 .main-header-grid-container {
     margin: 0px;
@@ -53,10 +65,12 @@ li.header-item {
 
     display: flex;
     justify-content: start;
+
+    border-bottom: 1px solid rgb(75, 118, 120);
 }
 
 .secondary-header-flex-item {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .secondary-header {
@@ -74,10 +88,11 @@ li.header-item {
 .content-wrapper {
     z-index: -1;
 
-    margin: 0px auto 0px;
+    margin: 40px auto 40px;
+    padding: 10px;
     
     width: 75%;
-    padding: 20px;
 
-    background-color: rgb(102, 156, 158);
+    border: 1px solid rgb(75, 118, 120);
+    border-radius: 10px;
 }
