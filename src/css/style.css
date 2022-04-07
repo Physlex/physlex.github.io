@@ -1,12 +1,14 @@
+
+/* General/Overridable */
+
 body {
-    margin: 0px;
+    margin: 0px auto 0px;
     padding: 0px;
+
     background-color: white;
 }
 
 div {
-    margin: 0px;
-    padding: 0px;
 }
 
 h1 {
@@ -17,6 +19,8 @@ h1 {
 li.header-item {
     list-style: none;
 }
+
+/* main header */
 
 .main-header-grid-container {
     margin: 0px;
@@ -39,21 +43,41 @@ li.header-item {
 }
 
 .main-header {
-    background-color: rgb(102, 156, 158);
+    background-color: rgb(75, 118, 120);
 }
+
+/* Secondary header */
 
 .secondary-header-flex-container {
     margin: 0px;
-    padding: 10px;
 
     display: flex;
     justify-content: start;
 }
 
 .secondary-header-flex-item {
-    margin: 0px 22px 0px 0;
+    font-size: 24px;
 }
 
 .secondary-header {
-    background-color: rgb(89, 137, 139);
+    position: relative;
+    
+    padding: 2px;
+    
+    background-color: rgb(102, 156, 158);
+    
+    box-shadow: 0px 7px 10px -10px;
+}
+
+/* Content */
+
+.content-wrapper {
+    z-index: -1;
+
+    margin: 0px auto 0px;
+    
+    width: 75%;
+    padding: 20px;
+
+    background-color: rgb(102, 156, 158);
 }
