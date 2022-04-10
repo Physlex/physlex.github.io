@@ -13,7 +13,6 @@ jobs:
           command: |
             apt install nodejs \
             npm --version
-            node --version
   css-style:
     docker:
       - image: cimg/base:stable
