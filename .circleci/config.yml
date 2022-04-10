@@ -15,7 +15,7 @@ jobs:
     steps:
       - checkout
       - run: |
-          install npm
+          install npm ./
           npm -v
           csslint src/css/style.css
           echo "did this work like I thought it would?"
