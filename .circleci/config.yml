@@ -11,11 +11,11 @@ jobs:
       - run:
           name: install dependencies and test style
           command: |
-            apt install nodejs \
-            npm --version \
-            npm install csslint \
-            find ./src/css \
-            csslint ./src/css/*.css \
+            apt install nodejs
+            npm --version
+            npm install csslint
+            find ./src/css
+            csslint ./src/css/*.css
             echo 'Style analysis completed'
 
 # Invoke jobs via workflows
