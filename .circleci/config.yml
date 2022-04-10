@@ -16,9 +16,9 @@ jobs:
       - checkout
       - run:
           name: "css style"
-          command: \
-          npm -v\
-          csslint src/css/style.css \
+          command: npm -v 
+          command: csslint src/css/style.css
+          command: echo "did this work like I thought it would?"
 
 
 # Invoke jobs via workflows
