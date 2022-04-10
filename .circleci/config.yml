@@ -14,8 +14,8 @@ jobs:
             apt install nodejs \
             npm --version \
             npm install csslint \
-            find ~/src/css \
-            csslint ~/src/css/*.css \
+            find ./src/css \
+            csslint ./src/css/*.css \
             echo 'Style analysis completed'
 
 # Invoke jobs via workflows
