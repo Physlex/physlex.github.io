@@ -14,11 +14,10 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - checkout
-      - run:
-          name: "css style"
-          command: npm -v 
-          command: csslint src/css/style.css
-          command: echo "did this work like I thought it would?"
+      - run: |
+          npm -v 
+          csslint src/css/style.css
+          echo "did this work like I thought it would?"
 
 
 # Invoke jobs via workflows
