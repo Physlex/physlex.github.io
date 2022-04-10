@@ -13,7 +13,9 @@ jobs:
           command: |
             apt install nodejs \
             npm --version \
-            npm install csslint
+            npm install csslint \
+            csslint src/css/*.css \
+            echo 'Style analysis completed'
   css-style:
     docker:
       - image: cimg/base:stable
