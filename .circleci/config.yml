@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run:
           name: install dependencies
-          command: npm install
+          command: install npm
   css-style:
     docker:
       - image: cimg/base:stable
