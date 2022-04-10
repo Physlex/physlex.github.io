@@ -16,14 +16,6 @@ jobs:
             npm install csslint \
             csslint src/css/*.css \
             echo 'Style analysis completed'
-  css-style:
-    docker:
-      - image: cimg/base:stable
-    steps:
-      - checkout
-      - run: |
-          csslint src/css/style.css
-          echo "did this work like I thought it would?"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
@@ -31,4 +23,3 @@ workflows:
   css-build-and-test:
     jobs:
       - build
-      - css-style
