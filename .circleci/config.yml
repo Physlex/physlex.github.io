@@ -13,7 +13,7 @@ jobs:
           command: |
             apt install nodejs \
             npm --version \
-            npm install -g csslint
+            npm install csslint
   css-style:
     docker:
       - image: cimg/base:stable
