@@ -1,3 +1,9 @@
+/* Public Variables */
+
+:root {
+    --bg: rgb(102, 156, 158);
+    --bgContent: rgb(75, 118, 120);
+}
 
 /* General/Overridable */
 
@@ -5,7 +11,7 @@ body {
     margin: 0px auto 0px;
     padding: 0px;
 
-    background-color: rgb(102, 156, 158);
+    background-color: var(--bg);
 }
 
 div {
@@ -21,7 +27,7 @@ p {
 }
 
 hr {
-    color: rgb(75, 118, 120);
+    color: var(--bgContent);
 }
 
 li.header-item {
@@ -55,7 +61,7 @@ li.header-item {
 }
 
 .main-header {
-    background-color: rgb(75, 118, 120);
+    background-color: var(--bgContent);
 }
 
 /* Secondary header */
@@ -66,7 +72,7 @@ li.header-item {
     display: flex;
     justify-content: start;
 
-    border-bottom: 1px solid rgb(75, 118, 120);
+    border-bottom: 1px solid var(--bgContent);
 }
 
 .secondary-header-flex-item {
@@ -78,7 +84,7 @@ li.header-item {
     
     padding: 2px;
     
-    background-color: rgb(102, 156, 158);
+    background-color: var(--bg);
     
     box-shadow: 0px 7px 10px -10px;
 }
@@ -93,6 +99,6 @@ li.header-item {
     
     width: 75%;
 
-    border: 1px solid rgb(75, 118, 120);
+    border: 1px solid var(--bgContent);
     border-radius: 10px;
 }
